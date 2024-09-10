@@ -24,7 +24,7 @@ body {
   width: 100%;
   max-width: 588px;
   margin: 0 auto;
-  padding: 170px 24px 24px;
+  padding: 140px 24px 24px;
   position: relative;
   overflow: hidden;
 }
@@ -48,7 +48,7 @@ body {
 #content {
   max-height: calc(100vh - 100px);
   overflow-y: auto;
-  padding-bottom: 150px; /* Adiciona um espaçamento extra na parte inferior */
+  padding-bottom: 80px; /* Adiciona um espaçamento extra na parte inferior */
 }
 
 #content::-webkit-scrollbar {
