@@ -23,7 +23,7 @@
   #container {
     width: 100%;
     max-width: 588px;
-    margin: 0 auto;
+    margin: 0 auto 150px;
     padding: 140px 24px 24px;
     position: relative;
     overflow: hidden;
@@ -55,36 +55,6 @@
     display: none; /* Oculta a barra de rolagem */
   }
 
-  ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    padding: 24px 0;
-  }
-  
-  ul li a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 16px 24px;
-    background: rgba(0, 47, 157, 0.475);
-    border: 1px solid var(--stok-color);
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 650;
-    transition: background 0.4s, border 0.4s;
-  }
-  
-  ul li a ion-icon {
-    margin-right: 10px;
-    font-size: 1.2em;
-  }
-  
-  ul li a:hover {
-    background: var(--fundo-color-hover);
-    border: 1.5px solid var(--text-color);
-  }
 
   /* Novo estilo para o rodapé fixo com ícone */
 footer {
