@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text-color: #fff;
+  --bg-mob: url(./fotos/fundo.jpeg);
+  --stok-color: rgba(255, 255, 255, 0.5);
+  --fundo-color: rgba(255, 255, 255, 0.05);
+  --fundo-color-hover: rgba(0, 0, 0, 0.02);
+  --social-color: rgba(255, 255, 255, 0.2);
+}
+
+body {
+  background: var(--bg-mob) no-repeat top center/cover;
+  height: 100vh;
+}
+
+body * {
+  font-family: "Inter", sans-serif;
+  color: var(--text-color);
+}
+
+#container {
+  width: 100%;
+  max-width: 588px;
+  margin: 58px auto 0;
+  padding: 180px 24px 24px 24px; /* Padding superior de 180px */
+  position: relative;
+  overflow: hidden;
+}
+
+#container h1 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px 0;
+}
+
+ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 24px;
+  background: rgba(0, 47, 157, 0.475);
+  border: 1px solid var(--stok-color);
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 650;
+  transition: background 0.4s, border 0.4s;
+}
+
+ul li a ion-icon {
+  margin-right: 10px;
+  font-size: 1.2em;
+}
+
+ul li a:hover {
+  background: var(--fundo-color-hover);
+  border: 1.5px solid var(--text-color);
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto; /* Ajuste a margem para centralizar o botão */
+}
+
+.custom-button {
+  padding: 16px 24px;
+  background: rgba(0, 47, 157, 0.475);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 650;
+  text-decoration: none;
+  transition: background 0.4s, border 0.4s;
+  display: inline-block;
+}
+
+
+
+.custom-button:hover {
+  background: rgba(0, 47, 157, 0.8);
+  border: 1.5px solid #fff;
+}
+
+@media (min-width: 700px) {
+  :root {
+    --bg-mob: url(./fotos/bg-desktop.jpeg);
+  }
+}
+
+@keyframes slide-in {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes slide-back {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
+  }
+}

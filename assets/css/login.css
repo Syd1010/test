@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*,
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  height: 100vh; /* Define a altura da página */
+  background: url(./fotos/fundo-mobile.jpg) no-repeat center/cover;
+}
+
+#login {
+  width: 60%;
+  height: 300px;
+  margin: 15rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.img-login {
+  width: 60px;
+  height: 50px;
+  color: white;
+  margin: 1rem auto 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+input:hover,
+button:hover {
+  transition: transform 0.2s ease;
+  transform: scale(1.03);
+}
+
+button {
+  width: 60%;
+  padding: 10px 20px;
+  background-color: #444343;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  margin: 5px auto;
+}
+
+.reset {
+  color: white;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+footer {
+  color: #fff;
+  font-size: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 520px) {
+  body {
+    background-image: url(./fotos/bg-desktop.jpeg);
+  }
+}
