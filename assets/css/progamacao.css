@@ -48,7 +48,7 @@ body {
 #content {
   max-height: calc(100vh - 100px);
   overflow-y: auto;
-  padding-bottom: 80px; /* Adiciona um espaçamento extra na parte inferior */
+  padding-bottom: 150px; /* Adiciona um espaçamento extra na parte inferior */
 }
 
 #content::-webkit-scrollbar {
