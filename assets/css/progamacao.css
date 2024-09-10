@@ -24,12 +24,12 @@ body {
   width: 100%;
   max-width: 588px;
   margin: 0 auto;
-  padding: 180px 24px 24px;
+  padding: 140px 24px 24px;
   position: relative;
   overflow: hidden;
 }
 
-#container h1{
+#container h1 {
   text-align: center;
 }
 
@@ -45,12 +45,12 @@ body {
 }
 
 #content {
-  max-height: calc(100vh - 180px);
+  max-height: calc(100vh - 100px);
   overflow-y: auto;
 }
 
 #content {
-  max-height: calc(100vh - 180px);
+  max-height: calc(100vh - 100px);
   overflow-y: scroll;
 }
 
@@ -59,7 +59,7 @@ body {
 }
 
 #content {
-  max-height: calc(100vh - 180px);
+  max-height: calc(100vh - 200px);
   overflow: -moz-scrollbars-none;
   scrollbar-width: none;
 }
@@ -106,35 +106,38 @@ ul.programacao .info-small {
   font-size: 0.85em;
 }
 
-.button-container {
-  display: flex;
-  justify-content: center;
-  margin: 20px 30px;
+/* Novo estilo para o rodapé fixo com ícone */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 47, 157, 0.475);
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 10;
 }
 
-.custom-button {
-  padding: 16px 24px;
-  background: rgba(0, 47, 157, 0.475);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 8px;
+footer a {
   color: #fff;
-  font-weight: 650;
   text-decoration: none;
-  transition: background 0.4s, border 0.4s;
-  display: inline-block;
+  font-size: 24px;
+  transition: color 0.3s ease;
 }
 
-.custom-button:hover {
-  background: rgba(0, 47, 157, 0.8);
-  border: 1.5px solid #fff;
+footer a:hover {
+  color: #ffd700;
 }
 
+footer i {
+  font-size: 24px;
+}
 
+/* Alterações para diferentes resoluções */
 @media (min-width: 700px) {
   :root {
     --bg-mob: url(./fotos/bg-desktop.jpeg);
   }
-
 }
 
 @keyframes slide-in {
