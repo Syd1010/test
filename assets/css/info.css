@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --text-color: #fff;
+    --bg-mob: url(./fotos/o-que-e.jpeg);
+    --stok-color: rgba(255, 255, 255, 0.5);
+    --fundo-color: rgba(255, 255, 255, 0.05);
+    --fundo-color-hover: rgba(0, 0, 0, 0.02);
+    --social-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  body {
+    background: var(--bg-mob) no-repeat top center/cover;
+    height: 100vh;
+  }
+  
+  body * {
+    font-family: "Inter", sans-serif;
+    color: var(--text-color);
+  }
+  
+  #container {
+    width: 100%;
+    max-width: 588px;
+    margin: 58px auto 0;
+    padding: 180px 24px 24px 24px; /* Padding superior de 180px */
+    position: relative;
+    overflow: hidden;
+  }
+
+    /* Novo estilo para o rodapé fixo com ícone */
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 47, 157, 0.475);
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+  }
+
+  footer a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    transition: color 0.3s ease;
+  }
+
+  footer a:hover {
+    color: #ffd700;
+  }
+
+  footer i {
+    font-size: 24px;
+  }
+  
+
+  
+  @media (min-width: 424px) {
+    :root {
+      --bg-mob: url(./fotos/bg-desktop.jpeg);
+    }
+  }
+  @media (max-width: 423px) {
+    #container {
+      display: none;
+    }
+  }
+  
+  @keyframes slide-in {
+    from {
+      left: 0;
+    }
+    to {
+      left: 50%;
+    }
+  }
+  
+  @keyframes slide-back {
+    from {
+      left: 50%;
+    }
+    to {
+      left: 0;
+    }
+  }
