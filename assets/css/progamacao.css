@@ -44,15 +44,14 @@ body {
   z-index: -1;
 }
 
-/* Adiciona espaço extra na parte inferior para evitar sobreposição com o rodapé */
 #content {
   max-height: calc(100vh - 100px);
   overflow-y: auto;
-  padding-bottom: 80px; /* Adiciona um espaçamento extra na parte inferior */
+  padding-bottom: 80px;
 }
 
 #content::-webkit-scrollbar {
-  display: none; /* Oculta a barra de rolagem */
+  display: none;
 }
 
 ul.programacao {
@@ -97,12 +96,11 @@ ul.programacao .info-small {
   font-size: 0.85em;
 }
 
-/* Novo estilo para o rodapé fixo com ícone */
 footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: rgba(0, 47, 157, 0.475);
+  background-color: rgb(0, 47, 157);
   padding: 10px;
   text-align: center;
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
@@ -124,7 +122,6 @@ footer i {
   font-size: 24px;
 }
 
-/* Alterações para diferentes resoluções */
 @media (min-width: 700px) {
   :root {
     --bg-mob: url(./fotos/bg-desktop.jpeg);

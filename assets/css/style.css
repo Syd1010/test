@@ -14,11 +14,6 @@
 }
 
 body {
-  /* background-image: url(./fotos/fundo-mobile.jpg);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;*/
-
   background: var(--bg-mob) no-repeat top center/cover;
   height: 100vh;
 }

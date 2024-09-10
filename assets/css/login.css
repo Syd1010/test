@@ -14,7 +14,7 @@
 }
 
 body {
-  height: 100vh; /* Define a altura da página */
+  height: 100vh; 
   background: url(./fotos/fundo-mobile.jpg) no-repeat center/cover;
 }
 
