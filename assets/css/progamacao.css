@@ -44,24 +44,15 @@ body {
   z-index: -1;
 }
 
+/* Adiciona espaço extra na parte inferior para evitar sobreposição com o rodapé */
 #content {
   max-height: calc(100vh - 100px);
   overflow-y: auto;
-}
-
-#content {
-  max-height: calc(100vh - 100px);
-  overflow-y: scroll;
+  padding-bottom: 80px; /* Adiciona um espaçamento extra na parte inferior */
 }
 
 #content::-webkit-scrollbar {
   display: none; /* Oculta a barra de rolagem */
-}
-
-#content {
-  max-height: calc(100vh - 200px);
-  overflow: -moz-scrollbars-none;
-  scrollbar-width: none;
 }
 
 ul.programacao {
